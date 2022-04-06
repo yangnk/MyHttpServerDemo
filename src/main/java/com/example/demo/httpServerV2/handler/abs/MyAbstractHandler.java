@@ -1,9 +1,9 @@
-package com.example.demo.httpServer.handler.abs;
+package com.example.demo.httpServerV2.handler.abs;
 
-import com.example.demo.httpServer.entity.MyEntity;
-import com.example.demo.httpServer.process.MyResponseProcess;
-import com.example.demo.httpServer.handler.inter.MyHandler;
-import com.example.demo.httpServer.entity.MyRequest;
+import com.example.demo.httpServerV2.entity.MyEntity;
+import com.example.demo.httpServerV2.process.MyResponseProcess;
+import com.example.demo.httpServerV2.handler.inter.MyHandler;
+import com.example.demo.httpServerV2.entity.MyRequest;
 
 /**
  * ${DESCRIPTION}

@@ -1,8 +1,7 @@
-package com.example.demo.httpServer.handler;
+package com.example.demo.httpServerV2.handler;
 
-import com.example.demo.httpServer.entity.MyEntity;
-import com.example.demo.httpServer.handler.abs.MyAbstractHandler;
-import com.example.demo.test.ClasspathTest;
+import com.example.demo.httpServerV2.entity.MyEntity;
+import com.example.demo.httpServerV2.handler.abs.MyAbstractHandler;
 
 /**
  * ${DESCRIPTION}

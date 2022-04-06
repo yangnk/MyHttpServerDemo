@@ -1,6 +1,6 @@
-package com.example.demo.httpServer.context;
+package com.example.demo.httpServerV2.context;
 
-import com.example.demo.httpServer.handler.inter.MyHandler;
+import com.example.demo.httpServerV2.handler.inter.MyHandler;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class MyHandlerContext {
             synchronized (MyHandler.class) {
                 if (instance == null) {
                     instance = new MyHandlerContext();
-                    String classPath = "com.example.demo.httpServer.handler.LoginHandler";
+                    String classPath = "com.example.demo.httpServerV2.handler.LoginHandler";
                     String uri = "/login.html";
                     Class<?> aClass = null;
                     MyHandler myHandler = null;

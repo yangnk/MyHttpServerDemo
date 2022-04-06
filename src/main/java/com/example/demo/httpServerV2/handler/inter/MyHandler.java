@@ -1,6 +1,6 @@
-package com.example.demo.httpServer.handler.inter;
+package com.example.demo.httpServerV2.handler.inter;
 
-import com.example.demo.httpServer.entity.MyEntity;
+import com.example.demo.httpServerV2.entity.MyEntity;
 
 /**
  * ${DESCRIPTION}

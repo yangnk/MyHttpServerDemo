@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.httpServer.server.MyServer;
+import com.example.demo.httpServerV2.server.MyServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

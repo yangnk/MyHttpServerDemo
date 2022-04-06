@@ -1,6 +1,6 @@
-package com.example.demo.httpServer.server;
+package com.example.demo.httpServerV2.server;
 
-import com.example.demo.httpServer.dispatcher.MyHttpDispatcher;
+import com.example.demo.httpServerV2.dispatcher.MyHttpDispatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

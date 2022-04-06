@@ -1,8 +1,8 @@
-package com.example.demo.httpServer.process;
+package com.example.demo.httpServerV2.process;
 
-import com.example.demo.httpServer.entity.MyEntity;
-import com.example.demo.httpServer.entity.MyRequest;
-import com.example.demo.httpServer.entity.MyResponse;
+import com.example.demo.httpServerV2.entity.MyEntity;
+import com.example.demo.httpServerV2.entity.MyRequest;
+import com.example.demo.httpServerV2.entity.MyResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

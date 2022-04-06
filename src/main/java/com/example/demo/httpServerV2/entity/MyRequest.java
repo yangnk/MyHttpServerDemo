@@ -1,4 +1,4 @@
-package com.example.demo.httpServer.entity;
+package com.example.demo.httpServerV2.entity;
 
 import java.util.HashMap;
 import java.util.Map;

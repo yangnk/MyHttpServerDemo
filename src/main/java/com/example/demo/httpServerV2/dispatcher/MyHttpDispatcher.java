@@ -1,8 +1,8 @@
-package com.example.demo.httpServer.dispatcher;
+package com.example.demo.httpServerV2.dispatcher;
 
-import com.example.demo.httpServer.entity.MyEntity;
-import com.example.demo.httpServer.context.MyHandlerContext;
-import com.example.demo.httpServer.handler.inter.MyHandler;
+import com.example.demo.httpServerV2.entity.MyEntity;
+import com.example.demo.httpServerV2.context.MyHandlerContext;
+import com.example.demo.httpServerV2.handler.inter.MyHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
