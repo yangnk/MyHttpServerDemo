@@ -84,7 +84,7 @@ public class MyServer implements Runnable {
                             new Thread(new MyHttpDispatcher(key, requestHeader)).start();
                             logger.info("开始处理httpHeader数据");
                         }
-                    }else if (key.isWritable()) {
+                    } else if (key.isWritable()) {
                         //该key有Write事件
                         logger.info("有流写出!");
                         SocketChannel socketChannel1 = (SocketChannel) key.channel();

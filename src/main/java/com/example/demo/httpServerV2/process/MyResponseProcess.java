@@ -47,7 +47,7 @@ public class MyResponseProcess {
         contentType = response.getContentType();
         key = response.getKey();
         selector = key.selector();
-        channel = (SocketChannel)key.channel();
+        channel = (SocketChannel) key.channel();
         htmlFile = response.getHtmlFile();
 
         //得到响应正文内容
@@ -60,7 +60,7 @@ public class MyResponseProcess {
         sb.append("Server: " + serverName + "\r\n");
         sb.append("Content-Type: " + contentType + "\r\n");
         sb.append("Date: " + new Date() + "\r\n");
-        if(reader != null) {
+        if (reader != null) {
             sb.append("Content-Length: " + html.getBytes().length + "\r\n");
         }
 
@@ -82,7 +82,7 @@ public class MyResponseProcess {
 
     private String setHtml(MyEntity context) {
         StringBuilder html = null;
-        if(htmlFile != null && htmlFile.length() > 0) {
+        if (htmlFile != null && htmlFile.length() > 0) {
 
             html = new StringBuilder();
 
@@ -90,7 +90,7 @@ public class MyResponseProcess {
                 reader = new BufferedReader(new FileReader(new File(htmlFile)));
                 String htmlStr;
                 htmlStr = reader.readLine();
-                while(htmlStr != null) {
+                while (htmlStr != null) {
                     html.append(htmlStr + "\r\n");
                     htmlStr = reader.readLine();
                 }

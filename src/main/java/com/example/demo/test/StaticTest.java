@@ -13,7 +13,8 @@ public class StaticTest {
     public static Map<String, String> map = new HashMap<>();
     public static StaticTest instance = null;
 
-    private  StaticTest() {}
+    private StaticTest() {
+    }
 
     public static void setContext(String a, String b) {
         if (instance == null) {

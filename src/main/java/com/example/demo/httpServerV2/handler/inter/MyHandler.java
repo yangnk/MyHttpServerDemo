@@ -12,7 +12,8 @@ public interface MyHandler {
 
     /**
      * 初始化handler
-     * @param:  @param context
+     *
+     * @param: @param context
      * @return: void
      * @Autor: Han
      */
@@ -20,7 +21,8 @@ public interface MyHandler {
 
     /**
      * handler service(service应该不是这样做的... - -!)
-     * @param:  @param context
+     *
+     * @param: @param context
      * @return: void
      * @Autor: Han
      */
@@ -28,7 +30,8 @@ public interface MyHandler {
 
     /**
      * Get形式执行该方法
-     * @param:  @param context
+     *
+     * @param: @param context
      * @return: void
      * @Autor: Han
      */
@@ -36,7 +39,8 @@ public interface MyHandler {
 
     /**
      * POST形式执行该方法
-     * @param:  @param context
+     *
+     * @param: @param context
      * @return: void
      * @Autor: Han
      */
@@ -44,7 +48,8 @@ public interface MyHandler {
 
     /**
      * 销毁Handler(并没有销毁... - -!)
-     * @param:  @param context
+     *
+     * @param: @param context
      * @return: void
      * @Autor: Han
      */

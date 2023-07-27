@@ -12,6 +12,7 @@ import sun.jvm.hotspot.HelloWorld;
  **/
 public class HelloLogback {
     private final static Logger logger = LoggerFactory.getLogger("HelloLogback.class");
+
     public static void main(String[] args) {
         logger.error("info test");
 

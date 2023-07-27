@@ -27,6 +27,7 @@ public class MyRequest {
 
     /**
      * 初始化
+     *
      * @param requestHeader 请求体requestHeader
      */
     private void init(String requestHeader) {
@@ -44,7 +45,7 @@ public class MyRequest {
 
     private void initRequestHeaders(String[] headers) {
         //去掉第一行
-        for(int i = 1; i < headers.length; i++) {
+        for (int i = 1; i < headers.length; i++) {
             String key = headers[i].substring(0, headers[i].indexOf(":"));
             String value = headers[i].substring(headers[i].indexOf(":") + 1);
             header.put(key, value);
@@ -58,9 +59,9 @@ public class MyRequest {
     private void initURI(String header) {
         uri = header.substring(header.indexOf(" ") + 1, header.indexOf(" ", header.indexOf(" ") + 1));
         //如果是get方法，则后面跟着参数   /index?a=1&b=2
-        if(method.toUpperCase().equals("GET")) {
+        if (method.toUpperCase().equals("GET")) {
             //有问号表示后面跟有参数
-            if(uri.contains("?")) {
+            if (uri.contains("?")) {
                 String attr = uri.substring(uri.indexOf("?") + 1, uri.length());
                 uri = uri.substring(0, uri.indexOf("?"));
                 initAttribute(attr);

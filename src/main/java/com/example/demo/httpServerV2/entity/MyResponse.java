@@ -1,6 +1,8 @@
 package com.example.demo.httpServerV2.entity;
 
-import java.nio.channels.SelectionKey; /**
+import java.nio.channels.SelectionKey;
+
+/**
  * ${DESCRIPTION}
  *
  * @author yangningkai

@@ -21,20 +21,20 @@ public class Response {
         this.request = request;
     }
 
-    public void sent()throws IOException{
+    public void sent() throws IOException {
         //get 方法
         if (request.method.equals(Method.GET.toString())) {
-            byte[] bytes=new byte[Constant.BUFFER_SIZE];
-            FileInputStream fis=null;
+            byte[] bytes = new byte[Constant.BUFFER_SIZE];
+            FileInputStream fis = null;
             try {
-                File file=new File(System.getProperty("user.dir") + "/webapp/" + request.getFileName());
-                if(file.exists()){
+                File file = new File(System.getProperty("user.dir") + "/webapp/" + request.getFileName());
+                if (file.exists()) {
                     //需要加入header
                     String header = fillHeader(Status._200);
                     outputStream.write(header.getBytes());
                     bytes = getBytes(file);
                     outputStream.write(bytes);
-                }else{
+                } else {
                     //404未发现
                     status = Status._404;
                     String header = fillHeader(Status._404);
@@ -45,8 +45,8 @@ public class Response {
                 }
             } catch (Exception e) {
                 System.out.println(e.toString());
-            }finally{
-                if(fis!=null){
+            } finally {
+                if (fis != null) {
                     fis.close();
                 }
             }
@@ -56,6 +56,7 @@ public class Response {
 
     /**
      * 塞response的body
+     *
      * @param status
      * @return
      */
@@ -69,18 +70,18 @@ public class Response {
 
     /**
      * 塞response的header
+     *
      * @param status http方法
      * @return
      */
     private String fillHeader(Status status) {
-        String header = Constant.VERSION + status.toString() + "\n"+
-                "Content-Type:text/html\r\n"+
-                "\r\n";
+        String header = Constant.VERSION + status.toString() + "\n" + "Content-Type:text/html\r\n" + "\r\n";
         return header;
     }
 
     /**
      * 读取文件file中内容
+     *
      * @param file 文件file
      * @return
      * @throws IOException

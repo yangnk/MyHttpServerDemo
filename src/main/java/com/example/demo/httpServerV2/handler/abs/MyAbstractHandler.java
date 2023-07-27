@@ -11,7 +11,7 @@ import com.example.demo.httpServerV2.entity.MyRequest;
  * @author yangningkai
  * @create 2022-03-29 20:23
  **/
-public abstract class MyAbstractHandler implements MyHandler{
+public abstract class MyAbstractHandler implements MyHandler {
     MyEntity entity;
 
     @Override
@@ -24,7 +24,7 @@ public abstract class MyAbstractHandler implements MyHandler{
     public void service(MyEntity entity) {
         //通过请求方式选择具体解决方法
         String method = entity.getRequest().getMethod();
-        if(method.equals(MyRequest.GET)) {
+        if (method.equals(MyRequest.GET)) {
             this.doGet(entity);
         } else if (method.equals(MyRequest.POST)) {
             this.doPost(entity);
@@ -37,11 +37,14 @@ public abstract class MyAbstractHandler implements MyHandler{
     }
 
     @Override
-    public void doGet(MyEntity entity) { }
+    public void doGet(MyEntity entity) {
+    }
 
     @Override
-    public void doPost(MyEntity entity) { }
+    public void doPost(MyEntity entity) {
+    }
 
     @Override
-    public void destory(MyEntity entity) { }
+    public void destory(MyEntity entity) {
+    }
 }

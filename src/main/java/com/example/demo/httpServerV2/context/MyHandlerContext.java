@@ -15,7 +15,8 @@ public class MyHandlerContext {
     private static Map<String, MyHandler> handlerMap = new HashMap<>();
     private static MyHandlerContext instance = null;
 
-    private MyHandlerContext() {}
+    private MyHandlerContext() {
+    }
 
     //todo 将写死的classPath-uri映射写到xml中
     public static MyHandlerContext getContextInstance() {
@@ -43,6 +44,7 @@ public class MyHandlerContext {
         }
         return instance;
     }
+
     public Map<String, MyHandler> getHandlerContext() {
         return handlerMap;
     }

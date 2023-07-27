@@ -1,6 +1,8 @@
 package com.example.demo.httpServerV2.entity;
 
-import java.nio.channels.SelectionKey; /**
+import java.nio.channels.SelectionKey;
+
+/**
  * ${DESCRIPTION}
  *
  * @author yangningkai
@@ -24,6 +26,7 @@ public class MyEntity {
     public void setResponse(MyResponse response) {
         this.response = response;
     }
+
     public MyRequest getRequest() {
         return request;
     }
